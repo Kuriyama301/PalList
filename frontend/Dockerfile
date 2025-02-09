@@ -2,6 +2,9 @@ FROM node:20.10.0
 
 WORKDIR /app
 
+# 特定のバージョンのnpmをインストール
+RUN npm install -g npm@10.2.3
+
 # package.jsonとpackage-lock.jsonをコピー
 COPY package*.json ./
 
