@@ -5,7 +5,7 @@ const apiClient = axios.create({
   headers: {
     "Content-Type": "application/json",
   },
-  // 必要に応じてタイムアウトなどの設定を追加
+
   timeout: 5000,
 });
 
